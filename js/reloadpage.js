@@ -1,1 +1,0 @@
-const socket=new WebSocket("ws://localhost:3003/","autoreload");console.log("sock",socket),socket.onmessage=(o=>{/reload/.test(o.data)&&setTimeout(()=>{location.reload(!0)},100)});
