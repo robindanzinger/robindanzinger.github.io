@@ -135,10 +135,9 @@
     ]
 
 function createProjectListItem(project, index) {
-  const side = index % 2 === 0 ? "pr-left" : "pr-right" 
   const technologieshtml = project.technologies.join("</li><li>")
   return `
-    <li class="project ${side}">
+    <li class="project">
     <div class="flipcard">
     <div class="flipcard-front">
     <div class="project-header">${project.title}</div>
