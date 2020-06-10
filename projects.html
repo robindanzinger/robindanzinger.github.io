@@ -122,7 +122,7 @@
        "company":  "IAF Institut für angewandte Forschung an der Hochschule Karlsruhe – Technik und Wirtschaft",
         "projectsize": "> 10 Personen",
 "description": "Job neben dem Studium, ca 10h pro Woche. Modellierung und Simulation von Kristallwachstum. Automatisierte Analyse des Codes zur Erfassung von Abhängigkeiten der Eingabeparameter. Entwicklung eines Werkzeugs zur Beschreibung und Validierung von Eingabeparametern für die Simulation",
-        "comment": "Es gibt zwar kleine Baukästen für Kinder, wo man lernt Kristalle zu züchten. Wenn es aber um echte Materialforschung geht, benötigt man riesige mathematische Modelle. Die Software läuft dann stunden- oder tageweise und berechnet die in der Simulation gewachsenen Kristallstrukturen. Und dann merkt man, die Eingangsparameter haben nicht so gepasst oder müssen weiter verfeinert werden. Aber was soll man anpassen. Mit hunderten oder sogar bis über tausend Parameter konnte das Modell gefüttert werden. Nur war das Modell gewachsen. Welche Parameter gibt es, und in welcher Form liegen die Daten vor. Ich habe einen Quellcodeparser geschrieben, der nach allen verfügbaren Parametern gesucht hat. In einer modernen Oberfläche in Eclipse wurden diese dann angezeigt und konnten je nach Typ komfortabel editiert werden.",
+        "comment": "Es gibt zwar kleine Baukästen für Kinder, wo man lernt Kristalle zu züchten. Wenn es aber um echte Materialforschung geht, benötigt man riesige mathematische Modelle. Die Software läuft dann stunden- oder tageweise und berechnet die in der Simulation gewachsenen Kristallstrukturen. Und dann merkt man, die Eingangsparameter haben nicht so gepasst oder müssen weiter verfeinert werden. Aber was soll man anpassen? Mit hunderten oder sogar bis über tausend Parameter konnte das Modell gefüttert werden. Nur war das Modell gewachsen. Welche Parameter gibt es, und in welcher Form liegen die Daten vor? Ich habe einen Quellcodeparser geschrieben, der nach allen verfügbaren Parametern gesucht hat. In einer modernen Oberfläche in Eclipse wurden diese dann angezeigt und konnten je nach Typ komfortabel editiert werden.",
 "technologies": "Java, Eclipse Rich-Client-Platform, SWT, JFace".split(", ")
       },
 
@@ -131,14 +131,14 @@
 "company":  "FZI Forschungszentrum Informatik an der Universität Karlsruhe",
         "projectsize": "> 10 Personen",
 "description": "Entwicklung grafischer Editoren zur Modellierung von Elektrik-Elektronik-Komponenten im Fahrzeugbau. Erstellen nützlicher Grafikwerkzeuge wie z.B. Raster, Snap-To-Grid.",
-        "comment": "Während des Studiums habe ich beim FZI mein Praktikum absolviert. Zwar hatte ich Vorlesungen zu C und Java bereits besucht. Aber Programmieren habe ich erst hier richtig gelernt. Eclipse wurde nicht nur als IDE sondern als Plattform für das Produkt verwendet. Damit habe ich mich schon früh einen Einblick in den Aufbau der IDE, der grafischen Bibiliothek SWT und JFace, sowie dem grafischen Editorframework GEF auseinandergesetzt. Das hat mir auch später im Studium geholfen, als ich dort die Vorlesung Design Patterns besucht. Für manch einen war die Vorlesung abstrakt und wenig verständlich. Ich kannte dagegen schon das ein oder andere Pattern und habe nachträglich nur noch die Namen dazu gelernt.",
+        "comment": "Während des Studiums habe ich beim FZI mein Praktikum absolviert. Zwar hatte ich Vorlesungen zu C und Java bereits besucht. Aber Programmieren habe ich erst hier richtig gelernt. Eclipse wurde nicht nur als IDE sondern als Plattform für das Produkt verwendet. Damit habe ich mich schon mit dem Aufbau der IDE, der grafischen Bibiliothek SWT und JFace, sowie dem grafischen Editorframework GEF auseinandergesetzt. Das hat mir auch später im Studium geholfen, als ich dort die Vorlesung Design Patterns besucht. Für manch einen war die Vorlesung abstrakt und wenig verständlich. Ich kannte dagegen schon das ein oder andere Pattern und habe nachträglich nur noch die Namen dazu gelernt.",
 "technologies": "Java, GEF, SWT, JFace, Eclipse Rich-Client-Platform".split(", ")
       }
     ]
 
 function createProjectListItem(project, index) {
   const technologieshtml = project.technologies.join("</li><li>")
-  return `
+   return `
     <li class="project">
     <div class="flipcard">
     <div class="flipcard-front">
