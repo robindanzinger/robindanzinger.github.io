@@ -24,15 +24,31 @@
       <li><a href="./impressum">Impressum</a></li>
       <li><a href="./datenschutz">Datenschutz</a></li>
     </ul>
-
-  </div>
-
-  <div class="content ap-console">
-    <h1>Projekte</h1>
-    <div class="font-bold">Hier sehen Sie eine Auswahl von Projekten, bei denen ich mitgearbeitet habe. Sie können auf ein Projekt klicken um mehr darüber zu erfahren.</div><br>
-    <ul id="projects" class="projects">
+    <ul class="monitorsettings">
+      <li>
+    <input title="Contrast" type="range" min="5" max="100" value="50" oninput="changeContrast(this.value)" class="slider contrast">
+      </li><li>
+    <input title="Brightness" type="range" min="5" max="100" value="50" oninput="changeBrightness(this.value)" class="slider brightness">
+      </li><li>
+    <input title="Saturation" type="range" min="5" max="100" value="50" oninput="changeSaturation(this.value)" class="slider saturation">
+      </li>
     </ul>
+    <div class="modesettings">
+        <button class="lightmode" title="Everybody adds DARKMODE but I add LIGHTMODE" onclick="toggleTheme()"></button>
+        <button class="power" title="Don't switch off the internet!!!" onclick="toggleTurnOff()"></button>
+    </div>
   </div>
+
+  <div id="turnoff" class="content ap-console turnoffanimwrapper">
+    <div class="turnoffanimation">
+    </div>
+  </div>
+  <div id="main" class="content ap-console">
+      <h1>Projekte</h1>
+      <div class="font-bold">Hier sehen Sie eine Auswahl von Projekten, bei denen ich mitgearbeitet habe. Sie können auf ein Projekt klicken um mehr darüber zu erfahren.</div><br>
+      <ul id="projects" class="projects">
+      </ul>
+    </div>
 </div>
   <script>
     const projects = [

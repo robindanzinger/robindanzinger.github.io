@@ -24,10 +24,26 @@
       <li class="selected"><a href="./impressum" class="selected">Impressum</a></li>
       <li><a href="./datenschutz">Datenschutz</a></li>
     </ul>
+    <ul class="monitorsettings">
+      <li>
+    <input title="Contrast" type="range" min="5" max="100" value="50" oninput="changeContrast(this.value)" class="slider contrast">
+      </li><li>
+    <input title="Brightness" type="range" min="5" max="100" value="50" oninput="changeBrightness(this.value)" class="slider brightness">
+      </li><li>
+    <input title="Saturation" type="range" min="5" max="100" value="50" oninput="changeSaturation(this.value)" class="slider saturation">
+      </li>
+    </ul>
+    <div class="modesettings">
+        <button class="lightmode" title="Everybody adds DARKMODE but I add LIGHTMODE" onclick="toggleTheme()"></button>
+        <button class="power" title="Don't switch off the internet!!!" onclick="toggleTurnOff()"></button>
+    </div>
   </div>
 
-  <div class="content ap-console">
-
+  <div id="turnoff" class="content ap-console turnoffanimwrapper">
+    <div class="turnoffanimation">
+    </div>
+  </div>
+  <div id="main" class="content ap-console">
     <h1>Impressum</h1>
 
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
